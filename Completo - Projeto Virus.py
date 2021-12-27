@@ -105,7 +105,7 @@ def configura_tela():
                             
 def contamina_pessoa(lista_pessoas, contador_contaminados):
     ''' Faz a lógica de contaminação de pessoas.'''
-    lista_pessoas[j].imagem = 'pred.gif'
+    lista_pessoas[j].imagem = 'pred.gif' # O indice 'j' deve ser passado como argumento da função. Dessa forma funciona, contudo não é recomendado fazer assim.
     lista_pessoas[j].desenha_pessoa()
     tabela_geral['contaminado'][j] = True
     tabela_geral['imune'][j] = False
